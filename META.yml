@@ -1,0 +1,20 @@
+---
+name: Perl-Install
+version: 0.01
+author:
+  - 'Rob Kinyon, L<rkinyon@cpan.org>'
+abstract: README
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Cwd: 0.01
+  File::Path: 0.01
+  File::Spec::Functions: 0.01
+  Getopt::Long: 1.00
+  Pod::Usage: 0.05
+  perl: 5.006_000
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

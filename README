@@ -1,0 +1,42 @@
+NAME
+    install_perl.pl
+
+SYNOPSIS
+    install_perl.pl [-d directory] [-v perl_version] [-m manifest]
+
+DESCRIPTION
+    Build a complete Perl and all CPAN modules in the specified directory.
+    It takes the name of a directory within which to install Perl. It then
+    populates it with everything that you specify.
+
+OPTIONS
+    directory (optional)
+        This is the directory within which the directory Perl is installed
+        will be created. The actual directory will be a subdirectory of this
+        with a name of the timestamp of creation. This defaults to '.'
+
+    * perl_version (optional)
+        This is the Perl version you wish to install. This defaults to
+        'stable'. If you choose to specify a devel version, this script will
+        still work as expected. (Tested using 5.9.5 to exercise a bug in
+        another module.)
+
+    manifest (optional)
+        This is the manifest of CPAN modules that will be passed to
+        install_cpan_modules.pl (provided with this distribution). That will
+        install all the CPAN modules within the just-built-perl's directory.
+        If this is specified, then install_cpan_modules.pl will be called.
+        If it is not, then it will not be called. Please q.v.
+        install_cpan_modules.pl for the format of this file.
+
+SEE ALSO
+    install_cpan_modules.pl
+
+AUTHOR
+    Rob Kinyon, rkinyon@cpan.org
+
+COPYRIGHT
+    Copyright (c) 2007 Rob Kinyon. All Rights Reserved. This is free
+    software, you may use it and distribute it under the same terms as Perl
+    itself.
+

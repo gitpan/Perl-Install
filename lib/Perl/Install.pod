@@ -1,0 +1,31 @@
+=head1 NAME
+
+Perl::Install
+
+=head1 DESCRIPTION
+
+This provides a set of scripts that help automate the installation of Perl and desired CPAN
+modules.
+
+=head1 CAVEATS
+
+These scripts aren't well-factored, are completely based around UNIX, and could use a lot of help
+to be the really great scripts it can become. But, cpan didn't start as nicely as it does, either.
+I would love to get a lot of community help with this. It works for me, but I want it to work for
+you, too.
+
+=head1 SEE ALSO
+
+L<install_perl.pl>, L<install_cpan_modules.pl>
+
+=head1 AUTHOR
+
+Rob Kinyon, L<rkinyon@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2007 Rob Kinyon. All Rights Reserved.
+This is free software, you may use it and distribute it under the same terms
+as Perl itself.
+
+=cut
